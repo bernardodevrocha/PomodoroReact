@@ -1,11 +1,11 @@
 import { TaskModel } from './TaskModel';
 
 export type TaskStateModel = {
-  tasks: TaskModel[]; // histórico, MainForm
+  tasks: TaskModel[];
   secondsRemaining: number;
   formatedSecondsRemaining: string;
   activeTask: TaskModel[] | null;
-  currentyCycle: number; // 1 a 8
+  currentCycle: number;
   config: {
     workTime: number;
     shortBreakTime: number;
